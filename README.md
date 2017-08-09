@@ -12,12 +12,14 @@ Shuffle your AWS ECS Services on scale up and down!
 module "container_service_shuffler" {
   source = "github.com/kgirthofer/service_shuffler?ref=0.1.0"
 
-  cluster_name            = "test-cluster"
-  autoscaling_group_name  = "testClusterASG"
-  lambda_name             = "test-shuffler"
-  region                  = "us-east-1"
+  cluster_name             = "test-cluster"
+  service_name             = "fluentd"
+  auto_scaling_group_name  = "testClusterASG"
+  lambda_name              = "test-shuffler"
+  region                   = "us-east-1"
 }
 ```
+you will also need to copy the python lambda code zip file into your base 
 
 ## Variables
 
