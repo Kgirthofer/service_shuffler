@@ -9,8 +9,8 @@ Shuffle your AWS ECS Services on scale up and down!
 ## Usage
 
 ```hcl
-module "container_service_cluster" {
-  source = "https://github.com/kgirthofer/service_shuffler?ref=0.1.0"
+module "container_service_shuffler" {
+  source = "github.com/kgirthofer/service_shuffler?ref=0.1.0"
 
   cluster_name            = "test-cluster"
   autoscaling_group_name  = "testClusterASG"
