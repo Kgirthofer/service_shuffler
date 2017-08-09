@@ -24,6 +24,7 @@ you will also need to copy the python lambda code zip file into your base
 ## Variables
 
 - `cluster_name`  - ECS Cluster name that you want the service deployed on
+- `service_name`  - Name of the service you need to have running on each host
 - `autoscaling_group_name`  - Name of the ASG you want to monitor for scale events
 - `lambda_name`  - What you want your lambda function to be 
 - `region`  - region for everything 
