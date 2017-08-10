@@ -24,6 +24,7 @@ resource "aws_lambda_function" "lambda_shuffler" {
     filename = "shuffler.zip"
     role = "${aws_iam_role.lambda_shuffler_role.arn}"
     source_code_hash = "${base64sha256(file("shuffler.zip"))}"
+    timeout = 30
     environment {
       variables = {
         REGION       = "${var.region}"
